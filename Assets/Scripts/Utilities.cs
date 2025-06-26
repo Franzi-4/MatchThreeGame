@@ -82,12 +82,12 @@ public static class Utilities
 
                 //if we have >= 3 matches, return a random one
                 if (matches.Count >= 3)
-                    return matches[UnityEngine.Random.Range(0, matches.Count - 1)];
+                    return matches[UnityEngine.Random.Range(0, matches.Count)];
 
                 //if we are in the middle of the calculations/loops
                 //and we have less than 3 matches, return a random one
                 if(row >= Constants.Rows / 2 && matches.Count > 0 && matches.Count <=2)
-                    return matches[UnityEngine.Random.Range(0, matches.Count - 1)];
+                    return matches[UnityEngine.Random.Range(0, matches.Count)];
             }
         }
         return null;
